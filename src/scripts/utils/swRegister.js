@@ -1,0 +1,13 @@
+const swRegister = async () => {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+        console.log('SW registered: ', registration);
+      }).catch((registrationError) => {
+        console.log('Service worker not supported in this browser', registrationError);
+      });
+    });
+  }
+};
+
+export default swRegister;

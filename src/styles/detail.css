@@ -1,0 +1,87 @@
+/* 
+  page detail
+*/
+
+#detail {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.image-header {
+  width:90%;
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 380px;
+}
+
+.image-header img {
+  height: 380px;
+  width: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  object-position: center;
+  transition: transform 1s ease-out;
+}
+
+.image-header img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in;
+}
+
+.image-header p {
+  top: -120px;
+  position: relative;
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.body-detail  {
+  display: grid;
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.icon {
+  font-size: 2.8em;
+}
+
+.padding-card {
+  padding: 10px 10px;
+}
+
+.review {
+  padding:10px;
+}
+
+.reviewer {
+  display: grid;
+  grid-gap: 10px
+}
+
+.input-review input {
+  width: 95%;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.input-review textarea {
+  width: 97%;
+  max-width:97%;
+  min-width:97%;
+  height: 70px;
+  max-height: 70px;
+  min-height: 70px;
+  padding-left: 5px;
+}
+
+.input-review button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
